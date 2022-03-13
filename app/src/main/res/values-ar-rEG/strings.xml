@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">منبه</string>
+    <string name="add_alarm"> اضافه منبه </string>
+    <string name="alarm_in"> التنبيه في </string>
+    <string name="minute"> دقيقه  </string>
+    <string name="Hour"> ساعه  </string>
+    <string-array name="amAndpm">
+            <item>ص</item>
+            <item>م</item>
+    </string-array>
+    <string name="splashText">منبهك في جيبك</string>
+
+</resources>

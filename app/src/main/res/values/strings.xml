@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Alram</string>
+    <string name="splashText">Your alarm clock in your pocket</string>
+    <string name="add_alarm"> add alram</string>
+    <string name="alarm_in"> alarm in </string>
+    <string name="minute"> minute</string>
+    <string-array name="amAndpm">
+        <item>Am</item>
+        <item>Pm</item>
+    </string-array>
+    <string name="Hour">hour</string>
+</resources>
