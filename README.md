@@ -1,4 +1,4 @@
 # Alarm_App_IEEE
-![Screenshot_20220715_072025](https://user-images.githubusercontent.com/95979643/179160656-97e21fc7-16bd-4014-ac63-89b3af927d25.png)
-![Screenshot_20220715_071651](https://user-images.githubusercontent.com/95979643/179160742-f8d62ef0-d475-4107-982a-292d2d8c24e9.png)
-![Screenshot_20220715_071820](https://user-images.githubusercontent.com/95979643/179160765-3167fe74-812e-4688-8edb-83d8aa642db3.png)
+![Screenshot_20220715_072025](https://user-images.githubusercontent.com/95979643/179161259-9f3a6ca5-2a3c-4a54-aa7f-9ff69d096687.png)
+![Screenshot_20220715_071651](https://user-images.githubusercontent.com/95979643/179161293-239b3690-8a32-47fa-b8ff-1a4f615c302f.png)
+![Screenshot_20220715_071820](https://user-images.githubusercontent.com/95979643/179161316-f5693f4c-bc98-4ecc-8648-e843b763e7fc.png)
