@@ -9,4 +9,6 @@
         <item>Pm</item>
     </string-array>
     <string name="Hour">hour</string>
+    <string name="Note">Note</string>
+
 </resources>

@@ -1,29 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:weightSum="5">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <Switch
-        android:id="@+id/remove"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="5dp"
-        android:layout_weight="1"
-        android:clickable="true"
-        android:minHeight="50dp"
-        android:text="Switch" />
+    <data>
+        <variable
+            name="alarmData"
+            type="noor.serry.alram.data.dataBase.AlarmData" />
 
-    <TextView
-        android:id="@+id/detiles"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
-        android:layout_weight="4"
-        android:minHeight="50dp"
-        android:text="TextView" />
-</LinearLayout>
+
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="6"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/timeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:text="@{alarmData.ringInHour+`:`+alarmData.ringInOfMinute}"
+            android:textColor="@color/textColor"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/noteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:text="@{alarmData.AmPm +`|`+ alarmData.note }"
+            android:textColor="@color/textColor"
+            android:textSize="16sp" />
+
+         <androidx.appcompat.widget.SwitchCompat
+             android:id="@+id/switchButton"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_weight="1.7"
+             android:checked="@{alarmData.active}"
+             app:track="@drawable/switch_on_off"
+             app:switchMinWidth="50dp"
+             android:thumb="@drawable/thumb"
+             android:tag="@{alarmData.tag }"
+             />
+
+
+    </LinearLayout>
+
+</layout>

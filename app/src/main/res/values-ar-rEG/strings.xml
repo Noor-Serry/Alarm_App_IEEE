@@ -10,5 +10,6 @@
             <item>م</item>
     </string-array>
     <string name="splashText">منبهك في جيبك</string>
+    <string name="Note">ملاحظه</string>
 
 </resources>

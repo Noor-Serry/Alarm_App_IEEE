@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="noor.serry.alram.ui.splachScreen.SplashScreen"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreen_to_viewPager"
+            app:destination="@id/viewPager"
+            app:popUpTo="@id/nav_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/newAlarm"
+        android:name="noor.serry.alram.ui.newAlarm.NewAlarm"
+        android:label="fragment_new_alarm"
+        tools:layout="@layout/fragment_new_alarm" >
+        <action
+            android:id="@+id/action_newAlarm_to_viewPager"
+            app:destination="@id/viewPager" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPager"
+        android:name="noor.serry.alram.ui.viewpager.ViewPager"
+        android:label="fragment_view_pager2"
+        tools:layout="@layout/fragment_view_pager2" >
+        <action
+            android:id="@+id/action_viewPager_to_newAlarm"
+            app:destination="@id/newAlarm"
+            app:popUpTo="@id/viewPager" />
+    </fragment>
+</navigation>
